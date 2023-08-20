@@ -1,0 +1,67 @@
+[
+  {
+    "bookId": 17,
+    "name": "Harry Potter",
+    "pages": 267,
+    "price": 2.99,
+    "genre": "Fantasy",
+    "author": {
+      "authorId": 109,
+      "name": "A.B. Author"
+    }
+  },
+  {
+    "bookId": 54,
+    "name": "Memory Man",
+    "pages": 560,
+    "price": 1.99,
+    "genre": "Horror",
+    "author": {
+      "authorId": 10,
+      "name": "C.D. Author"
+    }
+  },
+  {
+    "bookId": 66,
+    "name": "Exhalation",
+    "pages": 368,
+    "price": 2.99,
+    "genre": "Drama",
+    "author": {
+      "authorId": 1,
+      "name": "E.F. Author"
+    },
+    "reviews": [
+      {
+        "reviewId": 6,
+        "rating": 5,
+        "description": "A description",
+        "user": "Some user"
+      },
+      {
+        "reviewId": 14,
+        "rating": 3,
+        "description": "A description",
+        "user": "Some user"
+      }
+    ]
+  },
+  {
+    "bookId": 100,
+    "name": "Test book",
+    "pages": 123,
+    "price": 5.99,
+    "author": {
+      "authorId": 19,
+      "name": "G.H. Author"
+    },
+    "reviews": [
+      {
+        "reviewId": 6,
+        "rating": 5,
+        "description": "A description",
+        "user": "Some user"
+      }
+    ]
+  }
+]

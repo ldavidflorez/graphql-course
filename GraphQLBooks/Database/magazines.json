@@ -1,0 +1,20 @@
+[
+  {
+    "magId": 120,
+    "name": "Car and Driver",
+    "genre": "NonFiction",
+    "issueNo": 18
+  },
+  {
+    "magId": 13,
+    "name": "Dragon Ball",
+    "genre": "Fantasy",
+    "issueNo": 1
+  },
+  {
+    "magId": 187,
+    "name": "Horror Magazine",
+    "genre": "Horror",
+    "issueNo": 21
+  }
+]
