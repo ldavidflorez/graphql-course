@@ -1,67 +1,75 @@
 [
   {
-    "bookId": 17,
-    "name": "Harry Potter",
-    "pages": 267,
-    "price": 2.99,
-    "genre": "Fantasy",
-    "author": {
-      "authorId": 109,
-      "name": "A.B. Author"
-    }
+    "BookId": 17,
+    "Name": "Harry Potter",
+    "Pages": 267,
+    "Price": 2.99,
+    "PublishDate": null,
+    "Genre": 1,
+    "Author": { "AuthorId": 109, "Name": "A.B. Author" },
+    "Reviews": null
   },
   {
-    "bookId": 54,
-    "name": "Memory Man",
-    "pages": 560,
-    "price": 1.99,
-    "genre": "Horror",
-    "author": {
-      "authorId": 10,
-      "name": "C.D. Author"
-    }
+    "BookId": 54,
+    "Name": "Memory Man",
+    "Pages": 560,
+    "Price": 1.99,
+    "PublishDate": null,
+    "Genre": 0,
+    "Author": { "AuthorId": 10, "Name": "C.D. Author" },
+    "Reviews": null
   },
   {
-    "bookId": 66,
-    "name": "Exhalation",
-    "pages": 368,
-    "price": 2.99,
-    "genre": "Drama",
-    "author": {
-      "authorId": 1,
-      "name": "E.F. Author"
-    },
-    "reviews": [
+    "BookId": 66,
+    "Name": "Exhalation",
+    "Pages": 368,
+    "Price": 2.99,
+    "PublishDate": null,
+    "Genre": 2,
+    "Author": { "AuthorId": 1, "Name": "E.F. Author" },
+    "Reviews": [
       {
-        "reviewId": 6,
-        "rating": 5,
-        "description": "A description",
-        "user": "Some user"
+        "ReviewId": 6,
+        "Rating": 5,
+        "Description": "A description",
+        "ReviewDate": "0001-01-01T00:00:00",
+        "User": "Some user"
       },
       {
-        "reviewId": 14,
-        "rating": 3,
-        "description": "A description",
-        "user": "Some user"
+        "ReviewId": 14,
+        "Rating": 3,
+        "Description": "A description",
+        "ReviewDate": "0001-01-01T00:00:00",
+        "User": "Some user"
       }
     ]
   },
   {
-    "bookId": 100,
-    "name": "Test book",
-    "pages": 123,
-    "price": 5.99,
-    "author": {
-      "authorId": 19,
-      "name": "G.H. Author"
-    },
-    "reviews": [
+    "BookId": 100,
+    "Name": "Test book",
+    "Pages": 123,
+    "Price": 5.99,
+    "PublishDate": null,
+    "Genre": 0,
+    "Author": { "AuthorId": 19, "Name": "G.H. Author" },
+    "Reviews": [
       {
-        "reviewId": 6,
-        "rating": 5,
-        "description": "A description",
-        "user": "Some user"
+        "ReviewId": 6,
+        "Rating": 5,
+        "Description": "A description",
+        "ReviewDate": "0001-01-01T00:00:00",
+        "User": "Some user"
       }
     ]
+  },
+  {
+    "BookId": 4092,
+    "Name": "A new book",
+    "Pages": 100,
+    "Price": 9.99,
+    "PublishDate": "2000-12-12T05:00:00Z",
+    "Genre": 3,
+    "Author": null,
+    "Reviews": null
   }
 ]
