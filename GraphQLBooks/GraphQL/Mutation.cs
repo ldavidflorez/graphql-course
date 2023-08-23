@@ -1,14 +1,17 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using HotChocolate.Subscriptions;
 
-public class Mutation  {
-    public Book AddBook(BookInput input)  {
+public class Mutation
+{
+    public Book AddBook(BookInput input, [Service] ITopicEventSender sender)
+    {
 
         // Read all current books
         string fileName = "Database/books.json";
         string jsonString = File.ReadAllText(fileName);
-        var books= JsonSerializer.Deserialize<List<Book>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true, Converters = { new JsonStringEnumConverter() } })!;
-        
+        var books = JsonSerializer.Deserialize<List<Book>>(jsonString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true, Converters = { new JsonStringEnumConverter() } })!;
+
         // Create a new book based on the input
         var rand = new Random();
 
@@ -23,7 +26,10 @@ public class Mutation  {
         // Add the new book to the books list and save to the file
         books.Add(book);
         var json = JsonSerializer.Serialize(books);
-        File.WriteAllText(fileName,json);
+        File.WriteAllText(fileName, json);
+
+        // Send subscriptions notification about the new book
+        sender.SendAsync("BookAdded", book);
 
         // Return the newly created book
         return book;
